@@ -4,6 +4,15 @@ import com.example.domain.features.cities.model.CityEntity
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
+/*
+* Representing the list of cities in a Ternary Search Tree (TST) is an efficient choice for several reasons. A TST is a type of trie (prefix tree) where each node can have up to three children,
+* which makes it efficient for both search and auto-complete operations.
+* Here are some advantages of using a TST:
+1- Memory Efficiency: Unlike tries that may have up to 26 children per node (for the English alphabet), a TST has at most three children per node (left, middle, and right), which makes it more memory-efficient.
+2- Balanced Structure: TSTs can be balanced, which can lead to better average search times.
+3- Efficient Prefix Matching: TSTs are well-suited for prefix matching and auto-complete features because they allow for efficient searching of prefixes.
+*/
+
 class TernarySearchTree {
 
     private var root: TSTNode? = null
