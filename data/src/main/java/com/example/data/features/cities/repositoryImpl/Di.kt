@@ -1,6 +1,5 @@
 package com.example.data.features.cities.repositoryImpl
 
-import CityRepositoryImpl
 import com.example.domain.features.cities.repository.CitiesRepository
 import dagger.Binds
 import dagger.Module
@@ -12,6 +11,6 @@ import dagger.hilt.android.components.ViewModelComponent
 abstract class Di {
     @Binds
     abstract fun bindCitiesRepository(
-        cityRepositoryImpl: CityRepositoryImpl
+        cityRepositoryImpl: CitiesRepositoryImpl
     ): CitiesRepository
 }

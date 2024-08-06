@@ -1,22 +1,24 @@
 package com.example.data.model
 
-import com.google.gson.annotations.SerializedName
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
 
+@Serializable
 data class City(
-    @field:SerializedName("country")
+    @SerialName("country")
     val country: String,
-    @field:SerializedName("name")
+    @SerialName("name")
     val name: String,
-    @field:SerializedName("_id")
+    @SerialName("_id")
     val id: Int,
-    @field:SerializedName("coord")
+    @SerialName("coord")
     val coord: Coord
 )
 
-
+@Serializable
 data class Coord(
-    @field:SerializedName("lon")
+    @SerialName("lon")
     val lon: Double,
-    @field:SerializedName("lat")
+    @SerialName("lat")
     val lat: Double
 )

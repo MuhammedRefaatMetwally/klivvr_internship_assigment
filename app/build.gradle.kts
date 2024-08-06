@@ -20,6 +20,7 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+        multiDexEnabled = true
     }
 
     buildTypes {
@@ -42,16 +43,20 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.3"
     }
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
 }
 
 dependencies {
+
+    implementation(project(":data"))
+    implementation(project(":domain"))
 
     // Core Jetpack Compose UI library for building composable UIs
     implementation (libs.ui)
@@ -70,6 +75,8 @@ dependencies {
 
     //Hilt Dependency Injection
     implementation(libs.hilt.android)
+    implementation (libs.androidx.hilt.navigation.fragment)
+
     // Dagger Core
     implementation (libs.dagger)
     kapt (libs.dagger.compiler)
@@ -78,14 +85,14 @@ dependencies {
     api (libs.dagger.android)
     api (libs.dagger.android.support)
     kapt (libs.dagger.android.processor)
+    implementation(libs.androidx.hilt.navigation.compose)
+
 
     // Dagger - Hilt
     implementation (libs.dagger.hilt.android)
     kapt (libs.hilt.android.compiler)
 
-    implementation(project(":data"))
-    implementation(project(":domain"))
-
+    implementation (libs.androidx.multidex)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
