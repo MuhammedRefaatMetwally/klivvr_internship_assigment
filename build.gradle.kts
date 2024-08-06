@@ -5,3 +5,16 @@ plugins {
     alias(libs.plugins.android.library) apply false
     id("com.google.dagger.hilt.android") version "2.50" apply false
 }
+buildscript {
+    val kotlinVersion = "1.9.10"
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath(libs.gradle)
+        classpath(libs.hilt.android.gradle.plugin)
+        classpath (libs.kotlin.gradle.plugin)
+        classpath (libs.kotlin.serialization)
+    }
+}

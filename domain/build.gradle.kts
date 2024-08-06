@@ -33,6 +33,17 @@ android {
 }
 
 dependencies {
+    //Hilt Dependency Injection
+    implementation(libs.hilt.android)
+    // Dagger Core
+    implementation (libs.dagger)
+
+    // Dagger Android
+    api (libs.dagger.android)
+    api (libs.dagger.android.support)
+
+    // Dagger - Hilt
+    implementation (libs.dagger.hilt.android)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

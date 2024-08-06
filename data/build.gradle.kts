@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
     id("kotlin-kapt")
+    id("kotlinx-serialization")
 }
 
 android {
@@ -37,9 +38,6 @@ dependencies {
     // Kotlinx Serialization library for serializing and deserializing Kotlin objects to and from JSON
     implementation (libs.kotlinx.serialization.json )
 
-    // Gson library for serializing and deserializing Java objects to and from JSON
-    implementation(libs.gson)
-
     //Hilt Dependency Injection
     implementation(libs.hilt.android)
     // Dagger Core
@@ -54,8 +52,6 @@ dependencies {
     // Dagger - Hilt
     implementation (libs.dagger.hilt.android)
     kapt (libs.hilt.android.compiler)
-
-
 
     implementation(project(":domain"))
     implementation(libs.androidx.core.ktx)
