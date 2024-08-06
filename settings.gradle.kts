@@ -21,6 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "klivvr_cities_assigment"
 include(":app")
-include(":app:domain")
 include(":domain")
 include(":data")
