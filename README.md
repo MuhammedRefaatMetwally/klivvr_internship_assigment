@@ -62,12 +62,15 @@ The project follows Clean Architecture, ensuring separation of concerns and a ro
 
 ### Screenshots
 *Splash Screen*
+
 ![Splash Screen](https://github.com/user-attachments/assets/9082df49-ed3b-4d57-b553-55f6c9eb9712)
 
 *Home Screen: Search for cities.*
+
 ![Home Screen](https://github.com/user-attachments/assets/ce708704-fb71-49fa-b083-460ea47f8953)
 
 *City Details: View detailed information about the city.*
+
 ![City Details](https://github.com/user-attachments/assets/a64d68af-3f9a-4a0b-b6a6-cb8e6436e1e0)
 
 ### Video
