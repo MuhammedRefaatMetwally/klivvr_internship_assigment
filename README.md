@@ -1,4 +1,3 @@
-Here is the updated README with added icons for a more visually appealing presentation:
 
 # Klivvr Internship Assignment - City Search App
 
@@ -19,7 +18,7 @@ The City Search App allows users to search for cities, view city details, and na
 
 ## ✨ Features
 
-- **🔍 City Search**: Search for cities by name with real-time suggestions.
+- **🔍 City Search**: Search for cities by name with real-time suggestions With ##🌳 Trenary Tree DS.
 - **📋 City Details**: View detailed information about the city including coordinates.
 - **🗺 Map Navigation**: Navigate to the city's location on a map.
 - **📄 JSON Serialization**: Efficiently handle city data in JSON format.
