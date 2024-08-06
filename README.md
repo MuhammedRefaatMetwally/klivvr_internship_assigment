@@ -18,7 +18,7 @@ The City Search App allows users to search for cities, view city details, and na
 
 ## ✨ Features
 
-- **🔍 City Search**: Search for cities by name with real-time suggestions With ##🌳 Trenary Tree DS.
+- **🔍 City Search**: Search for cities by name with real-time suggestions With ##Trenary Tree 🌳 DS.
 - **📋 City Details**: View detailed information about the city including coordinates.
 - **🗺 Map Navigation**: Navigate to the city's location on a map.
 - **📄 JSON Serialization**: Efficiently handle city data in JSON format.
